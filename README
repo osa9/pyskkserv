@@ -1,0 +1,7 @@
+pyskkserv
+
+Pythonで作ったskkservです。
+
+Usage:
+./pyskkserv [port]
+(default port is 1178)
