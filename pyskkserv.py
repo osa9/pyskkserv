@@ -7,7 +7,6 @@ PORT = 1178
 
 #モジュールをインポート
 from mod.CurrentTime import CurrentTime
-from mod.GoogleAPI import GoogleIME
 
 
 import sys
@@ -17,7 +16,5 @@ if __name__ == "__main__":
 	if len(sys.argv)>1:
 		PORT = int(sys.argv[1])
 	PySKKServ().start(HOST,PORT,
-			[("いま|きょう|now|today",CurrentTime),
-			 (".+",GoogleIME)
-			]
+			[("いま|きょう|now|today",CurrentTime)]
 			,debug_out = True)
